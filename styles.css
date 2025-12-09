@@ -1,0 +1,154 @@
+/*
+Name: Firas Iqbal
+Date created: 09/26/2025
+Date last edited: 12/6/2025
+Version: 1.0
+Description: Homework 1 CSS 
+*/
+
+
+/* General Styling */
+body {
+  background-color: #D8C7DD; /* light purple */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Header styling */
+header {
+  background-color: #FFDAB9; /* light peach */
+  padding: 15px;
+  display: flex;
+  
+  justify-content: center; 
+  align-items: center;     
+}
+
+
+
+
+header h2 {
+  
+  padding-left: 470px; 
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+/* Table Styling */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+
+
+td, th {
+  padding: 5px 10px; 
+  vertical-align: bottom; 
+  text-align: left; 
+}
+
+/* Form Header Row */
+th[colspan] {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10px;
+}
+
+
+label {
+  display: inline-block;
+  width: 200px; /* Consistent width for the label box */
+  margin-right: 10px;
+  text-align: left; 
+  vertical-align: middle; 
+}
+
+
+/* Input Styling Standard */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+select {
+  padding: 4px;
+  width: 300px; 
+  box-sizing: border-box; 
+  vertical-align: baseline; 
+}
+
+/* Inline Labels */
+label[for="mintial"],
+label[for="lname"],
+label[for="zip"],
+label[for="state"],
+label[for="pass"],
+label[for="confirmPass"] {
+  width: auto;       
+  margin-right: 8px; 
+}
+
+/* Apply the general  width to all text inputs AFTER the first one */
+.name-row input[type="text"],
+.city-row input[type="text"],
+.city-row select,
+.credentials-row input[type="text"],
+.credentials-row input[type="password"] {
+    width: 150px; 
+}
+
+
+#fname, 
+#city, 
+#uID { 
+    width: 180px; 
+}
+
+/* Special adjustment for the M.I. field*/
+#mintial {
+    width: 30px; 
+}
+
+/* Textarea adjustment */
+textarea {
+  width: 300px;
+  height: 60px;
+  padding: 4px;
+  box-sizing: border-box;
+  vertical-align: top; 
+}
+
+/* Input Boxes for buttons */
+input[type="submit"],
+input[type="reset"]
+ {
+  padding: 6px 12px;
+  margin: 6px;
+}
+
+#review {
+    padding: 6px 12px;
+    margin: 6px;
+}
+
+
+.slider-container {
+  display: flex;           
+  align-items: center;     
+  gap: 100px;              /* space between slider and number */
+  margin-top: 5px;         
+}
+
+#pain-slider {
+  font-size: 20px;         
+  min-width: 20px;        
+  text-align: left;
+}
+
+#dateCell {
+  text-align: right;       
+  padding-left: 300px;     
+}
+
