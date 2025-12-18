@@ -6,6 +6,16 @@ Version: 1.0
 Description: Homework 1 JS 
 */
 
+const inputs = [
+    { id: "fname", cookieName: "firstName" },
+    { id: "lname", cookieName: "lastName" },
+    { id: "email", cookieName: "email" },
+    { id: "phone", cookieName: "phone" },
+    { id: "city", cookieName: "city" },
+    { id: "zip", cookieName: "zip" },
+    { id: "uID", cookieName: "userID" }
+];
+
 //dynamic date 
 const date = new Date();
 let text = date.toLocaleDateString();
@@ -464,14 +474,6 @@ function deleteAllCookies() {
     });
 }
 
-//ensures cookies are deleted
-document.addEventListener("DOMContentLoaded", function () {
-    const rememberMe = document.getElementById("remember-me").checked;
-
-    if (!rememberMe) {
-        deleteAllCookies();
-    }
-});
 
 
 
